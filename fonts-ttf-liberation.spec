@@ -1,5 +1,3 @@
-%define pkgname dejavu-ttf
-
 Summary: Liberation ttf Fonts
 Name: fonts-ttf-liberation
 Version: 0.1
@@ -32,7 +30,7 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/fonts/TTF/liberation
 
 install -m 644 *.ttf $RPM_BUILD_ROOT%{_datadir}/fonts/TTF/liberation
-ttmkfdir $RPM_BUILD_ROOT%{_datadir}/fonts/TTF/dejavu > $RPM_BUILD_ROOT%{_datadir}/fonts/TTF/liberation/fonts.dir
+ttmkfdir $RPM_BUILD_ROOT%{_datadir}/fonts/TTF/liberation > $RPM_BUILD_ROOT%{_datadir}/fonts/TTF/liberation/fonts.dir
 ln -s fonts.dir $RPM_BUILD_ROOT%{_datadir}/fonts/TTF/liberation/fonts.scale
 
 %clean
