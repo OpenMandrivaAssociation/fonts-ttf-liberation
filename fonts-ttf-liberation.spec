@@ -12,7 +12,7 @@ Requires(postun): fontconfig
 Requires(post): chkfontpath
 Requires(postun): chkfontpath
 BuildArch: noarch
-Requires: freetype-tools
+BuildRequires: freetype-tools
 
 %description
 The Liberation Fonts are intended to be replacements for the three
