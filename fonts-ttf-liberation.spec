@@ -1,14 +1,13 @@
+%define tarball_version 2
 Summary: Liberation ttf Fonts
 Name: fonts-ttf-liberation
 Version: 0.1
-Release: %mkrel 1
-License: GPL
+Release: %mkrel 2
+License: GPL + font exception
 Group: System/Fonts/True type
 URL: https://www.redhat.com/promo/fonts/
-Source0: https://www.redhat.com/f/fonts/liberation-fonts-%{version}.tar.bz2
+Source0: https://www.redhat.com/f/fonts/liberation-fonts-ttf-%{tarball_version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Requires(post): fontconfig 
-Requires(postun): fontconfig 
 Requires(post): chkfontpath
 Requires(postun): chkfontpath
 BuildArch: noarch
