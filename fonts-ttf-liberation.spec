@@ -1,12 +1,12 @@
-%define tarball_version 2
+%define tarball_version 3
 Summary: Liberation ttf Fonts
 Name: fonts-ttf-liberation
-Version: 0.1
-Release: %mkrel 3
+Version: 0.2
+Release: %mkrel 1
 License: GPL + font exception
 Group: System/Fonts/True type
 URL: https://www.redhat.com/promo/fonts/
-Source0: https://www.redhat.com/f/fonts/liberation-fonts-ttf-%{tarball_version}.tar.bz2
+Source0: https://www.redhat.com/f/fonts/liberation-fonts-ttf-%{tarball_version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
 BuildRequires: freetype-tools
@@ -17,7 +17,7 @@ most commonly used fonts on Microsoft systems: Times New Roman,
 Arial, and Courier New.
 
 %prep
-%setup -q -c 
+%setup -q -n liberation-fonts-%{version}
 
 %build
 
