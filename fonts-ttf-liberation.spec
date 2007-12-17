@@ -7,7 +7,6 @@ License: GPL + font exception
 Group: System/Fonts/True type
 URL: https://www.redhat.com/promo/fonts/
 Source0: https://www.redhat.com/f/fonts/liberation-fonts-ttf-%{tarball_version}.tar.gz
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
 BuildRequires: freetype-tools
 
