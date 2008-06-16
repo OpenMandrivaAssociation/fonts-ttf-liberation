@@ -1,7 +1,7 @@
 Summary: Liberation ttf Fonts
 Name: fonts-ttf-liberation
 Version: 1.0
-Release: %mkrel 1
+Release: %mkrel 2
 License: GPL + font exception
 Group: System/Fonts/True type
 URL: https://www.redhat.com/promo/fonts/
