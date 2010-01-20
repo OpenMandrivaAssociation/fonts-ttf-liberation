@@ -4,7 +4,7 @@
 Summary: Fonts to replace commonly used Microsoft Windows Fonts
 Name: fonts-ttf-liberation
 Version: 1.05.2
-Release: %mkrel 1
+Release: %mkrel 2
 # The license of the Liberation Fonts is a EULA that contains 
 # GPLv2 and two exceptions:
 # The first exception is the standard FSF font exception.
@@ -46,15 +46,6 @@ popd
 
 %clean
 rm -rf $RPM_BUILD_ROOT
-
-%post
-[ -x %{_bindir}/fc-cache ] && %{_bindir}/fc-cache 
-
-%postun
-if [ "$1" = "0" ]; then
-  [ -x %{_bindir}/fc-cache ] && %{_bindir}/fc-cache 
-fi
-
 
 %files
 %defattr(-,root,root,-)
