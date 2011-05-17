@@ -17,6 +17,7 @@ URL: https://fedorahosted.org/liberation-fonts/
 Source0: https://fedorahosted.org/releases/l/i/liberation-fonts/%{pkgname}-%{version}.%{date}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
+BuildRequires: fontconfig
 BuildRequires: freetype-tools
 
 %description
