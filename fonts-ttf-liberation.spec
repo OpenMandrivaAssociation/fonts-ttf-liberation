@@ -7,7 +7,7 @@
 
 Summary: Fonts to replace commonly used Microsoft Windows Fonts
 Name: fonts-ttf-liberation
-Version: 1.07.1
+Version: 1.07.2
 Release: %mkrel 1
 # The license of the Liberation Fonts is a EULA that contains 
 # GPLv2 and two exceptions:
