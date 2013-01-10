@@ -25,7 +25,7 @@ most commonly used fonts on Microsoft systems: Times New Roman,
 Arial, and Courier New.
 
 %prep
-%setup -q -c -n %{pkgname}-%{version}
+%setup -q -n %{pkgname}-%{version}
 
 %build
 
