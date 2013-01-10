@@ -41,7 +41,7 @@ ln -s ../../..%{_datadir}/fonts/TTF/liberation \
     %{buildroot}%{_sysconfdir}/X11/fontpath.d/ttf-liberation:pri=50
 
 %files
-%doc License.txt COPYING
+%doc README AUTHORS LICENSE TODO
 %dir %{_datadir}/fonts/TTF/liberation
 %{_datadir}/fonts/TTF/liberation/*.ttf
 %verify(not mtime) %{_datadir}/fonts/TTF/liberation/fonts.dir
