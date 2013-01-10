@@ -30,7 +30,6 @@ Arial, and Courier New.
 %build
 
 %install
-pushd ttf
 mkdir -p %{buildroot}%{_datadir}/fonts/TTF/liberation
 
 install -m 644 *.ttf %{buildroot}%{_datadir}/fonts/TTF/liberation
@@ -40,8 +39,6 @@ ln -s fonts.dir %{buildroot}%{_datadir}/fonts/TTF/liberation/fonts.scale
 mkdir -p %{buildroot}%{_sysconfdir}/X11/fontpath.d/
 ln -s ../../..%{_datadir}/fonts/TTF/liberation \
     %{buildroot}%{_sysconfdir}/X11/fontpath.d/ttf-liberation:pri=50
-popd
-
 
 %files
 %doc License.txt COPYING
