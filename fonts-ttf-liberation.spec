@@ -4,7 +4,7 @@
 Summary:	Fonts to replace commonly used Microsoft Windows Fonts
 Name:		fonts-ttf-liberation
 Version:	2.00.1
-Release:	12
+Release:	13
 # The license of the Liberation Fonts is a EULA that contains 
 # GPLv2 and two exceptions:
 # The first exception is the standard FSF font exception.
@@ -18,6 +18,9 @@ Source0:	https://fedorahosted.org/releases/l/i/liberation-fonts/%{pkgname}-%{ver
 BuildArch:	noarch
 BuildRequires:	fontconfig
 BuildRequires:	freetype-tools
+
+# Google-Chrome 70+ and other chromium based browser like Vivaldi or Brave need liberation-fonts
+Provides:	liberation-fonts
 
 %description
 The Liberation Fonts are intended to be replacements for the three
