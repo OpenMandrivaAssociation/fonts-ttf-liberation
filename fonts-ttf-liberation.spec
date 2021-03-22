@@ -3,8 +3,8 @@
 
 Summary:	Fonts to replace commonly used Microsoft Windows Fonts
 Name:		fonts-ttf-liberation
-Version:	2.00.1
-Release:	14
+Version:	2.1.3
+Release:	1
 # The license of the Liberation Fonts is a EULA that contains 
 # GPLv2 and two exceptions:
 # The first exception is the standard FSF font exception.
@@ -28,7 +28,7 @@ most commonly used fonts on Microsoft systems: Times New Roman,
 Arial, and Courier New.
 
 %prep
-%setup -qn %{pkgname}-%{version}
+%autosetup n %{pkgname}-%{version} -p1
 
 %build
 
@@ -50,4 +50,3 @@ ln -s ../../..%{_datadir}/fonts/TTF/liberation \
 %verify(not mtime) %{_datadir}/fonts/TTF/liberation/fonts.dir
 %{_datadir}/fonts/TTF/liberation/fonts.scale
 %{_sysconfdir}/X11/fontpath.d/ttf-liberation:pri=50
-
