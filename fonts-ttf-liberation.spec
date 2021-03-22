@@ -13,8 +13,8 @@ Release:	1
 # incompatible.
 License:	GPLv2 + font exception
 Group:		System/Fonts/True type
-Url:		https://fedorahosted.org/liberation-fonts/
-Source0:	https://fedorahosted.org/releases/l/i/liberation-fonts/%{pkgname}-%{version}.tar.gz
+Url:		https://github.com/liberationfonts/liberation-fonts
+Source0:	https://github.com/liberationfonts/liberation-fonts/releases/%{pkgname}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	fontconfig
 BuildRequires:	freetype-tools
@@ -28,7 +28,7 @@ most commonly used fonts on Microsoft systems: Times New Roman,
 Arial, and Courier New.
 
 %prep
-%autosetup n %{pkgname}-%{version} -p1
+%autosetup -n %{pkgname}-%{version} -p1
 
 %build
 
