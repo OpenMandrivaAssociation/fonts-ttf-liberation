@@ -3,8 +3,8 @@
 
 Summary:	Fonts to replace commonly used Microsoft Windows Fonts
 Name:		fonts-ttf-liberation
-Version:	2.00.1
-Release:	14
+Version:	2.1.3
+Release:	1
 # The license of the Liberation Fonts is a EULA that contains 
 # GPLv2 and two exceptions:
 # The first exception is the standard FSF font exception.
@@ -13,8 +13,8 @@ Release:	14
 # incompatible.
 License:	GPLv2 + font exception
 Group:		System/Fonts/True type
-Url:		https://fedorahosted.org/liberation-fonts/
-Source0:	https://fedorahosted.org/releases/l/i/liberation-fonts/%{pkgname}-%{version}.tar.gz
+Url:		https://github.com/liberationfonts/liberation-fonts
+Source0:	https://github.com/liberationfonts/liberation-fonts/releases/%{pkgname}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	fontconfig
 BuildRequires:	freetype-tools
@@ -28,7 +28,7 @@ most commonly used fonts on Microsoft systems: Times New Roman,
 Arial, and Courier New.
 
 %prep
-%setup -qn %{pkgname}-%{version}
+%autosetup -n %{pkgname}-%{version} -p1
 
 %build
 
@@ -44,10 +44,9 @@ ln -s ../../..%{_datadir}/fonts/TTF/liberation \
 	%{buildroot}%{_sysconfdir}/X11/fontpath.d/ttf-liberation:pri=50
 
 %files
-%doc README AUTHORS LICENSE TODO
+%doc README.md AUTHORS LICENSE TODO
 %dir %{_datadir}/fonts/TTF/liberation
 %{_datadir}/fonts/TTF/liberation/*.ttf
 %verify(not mtime) %{_datadir}/fonts/TTF/liberation/fonts.dir
 %{_datadir}/fonts/TTF/liberation/fonts.scale
 %{_sysconfdir}/X11/fontpath.d/ttf-liberation:pri=50
-
