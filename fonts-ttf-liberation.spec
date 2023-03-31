@@ -4,7 +4,7 @@
 Summary:	Fonts to replace commonly used Microsoft Windows Fonts
 Name:		fonts-ttf-liberation
 Version:	2.1.5
-Release:	1
+Release:	2
 # The license of the Liberation Fonts is a EULA that contains 
 # GPLv2 and two exceptions:
 # The first exception is the standard FSF font exception.
